@@ -51,7 +51,7 @@ cd company_tree
 ### 5. Заполнение базы данных и применение миграций
 Запустите скрипт для генерации тестовых данных
 ```bash
-python Scripts/populate_db.py
+python utils/populate_db.py
 ```
 ### 6. Запуск сервера разработки
 ```bash
