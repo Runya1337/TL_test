@@ -24,7 +24,7 @@
 
 ```bash
 git clone https://github.com/Runya1337/TL_test
-cd company_tree
+cd test_TL
 ```
 
 ### 2. Создание и активация виртуального окружения
@@ -44,8 +44,14 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-### 4. Применение миграций и сбор статики
+### 3.1 Переход в Django-проект 
 ```bash
+cd company_tree
+```
+
+### 4. Создание и применение миграций и сбор статики
+```bash
+python manage.py makemigrations
 python manage.py migrate
 python manage.py collectstatic
 ```
