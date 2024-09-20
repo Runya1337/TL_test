@@ -58,7 +58,7 @@ python Scripts/populate_db.py
 python manage.py runserver
 ```
 ### 6. Запуск сервера разработки
-http://127.0.0.1:8000/employees/tree/
+http://127.0.0.1:8000/tree/
 
 
 
