@@ -44,18 +44,11 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-### 3.1 Переход в Django-проект 
+### 4. Переход в Django-проект 
 ```bash
 cd company_tree
 ```
-
-### 4. Создание и применение миграций и сбор статики
-```bash
-python manage.py makemigrations
-python manage.py migrate
-python manage.py collectstatic
-```
-### 5. Заполнение базы данных
+### 5. Заполнение базы данных и применение миграций
 Запустите скрипт для генерации тестовых данных
 ```bash
 python Scripts/populate_db.py
