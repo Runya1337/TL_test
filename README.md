@@ -24,7 +24,7 @@
 
 ```bash
 git clone https://github.com/Runya1337/TL_test
-cd test_TL
+cd TL_test
 ```
 
 ### 2. Создание и активация виртуального окружения
