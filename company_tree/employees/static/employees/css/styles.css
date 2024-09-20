@@ -1,0 +1,77 @@
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/diagmonds.png');
+    background-color: #f0f8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.tree ul {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1em;
+}
+
+.tree li {
+    margin-left: -1em;
+    position: relative;
+    padding: 0.5em 0 0.5em 1em;
+    line-height: 1.5em;
+}
+
+.tree li::before {
+    content: '';
+    position: absolute;
+    top: 1em;
+    left: 0;
+    border-left: 1px solid #ccc;
+    bottom: 0;
+}
+
+.tree li::after {
+    content: '';
+    position: absolute;
+    top: 1em;
+    left: 0;
+    border-top: 1px solid #ccc;
+    width: 1em;
+}
+
+.tree li:last-child::before {
+    height: 1em;
+}
+
+.tree li span {
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #34495e;
+}
+
+.tree li span:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+.tree li ul {
+    margin-left: 1.5em;
+}
+
+/* Анимация сворачивания */
+.collapse {
+    transition: height 0.3s ease;
+}

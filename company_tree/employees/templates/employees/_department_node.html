@@ -1,0 +1,21 @@
+<li>
+    <span data-toggle="collapse" data-target="#dept-{{ department.id }}" aria-expanded="false">
+        🏢 {{ department.name }}
+    </span>
+    <div id="dept-{{ department.id }}" class="collapse">
+        {% if department.employees.exists %}
+            <ul>
+                {% for employee in department.employees.all %}
+                    <li>👤 {{ employee.full_name }} - {{ employee.position }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% if department.get_children.exists %}
+            <ul>
+                {% for child in department.get_children %}
+                    {% include 'employees/_department_node.html' with department=child %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</li>

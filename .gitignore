@@ -1,0 +1,27 @@
+# Python кеширование
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# VS Code
+.vscode/
+
+# Virtual Environment
+venv/
+ENV/
+env/
+venv.bak/
+env.bak/
+.venv
+
+# PyCharm
+.idea/
+
+# Mac OS
+.DS_Store
